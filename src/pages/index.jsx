@@ -9,7 +9,7 @@ import ProjectCard from '../components/ProjectCard'
 
 // Elements
 import Inner from '../elements/Inner'
-import { Title, BigTitle, Subtitle } from '../elements/Titles'
+import { Title, BigTitle, Subtitle, TitleWhite } from '../elements/Titles';
 
 // Views
 import Hero from '../views/Hero'
@@ -18,6 +18,8 @@ import About from '../views/About'
 import Contact from '../views/Contact'
 
 import avatar from '../images/avatar.jpg'
+import handly from '../images/handly_mockup.png'
+import pidgeon from '../images/pidgeon_mockup.png'
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -70,31 +72,33 @@ const Index = () => (
       <Projects offset={1}>
         <Title>Projects</Title>
         <ProjectsWrapper>
-          <ProjectCard
+          {/* <ProjectCard
             title="Sendger"
-            link="https://www.senger.com"
+            link="https://www.sendger.com"
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
             Mobile app that helps you send your things over the air by finding travelers.
-          </ProjectCard>
+          </ProjectCard>*/}
           <ProjectCard
             title="Handly"
             link="https://handlysearch.herokuapp.com"
-            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+            mockup={handly}
+            tech="Rails API + React hooks & Redux"
           >
             Single-page app that gets you estimates from moving companies depending on your relocation needs.
           </ProjectCard>
           <ProjectCard
             title="Pidgeon"
             link="https://pidgeon.herokuapp.com"
-            bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+            mockup={pidgeon}
+            tech="Pure Rails + ERB"
           >
             Responsive MVC app that handles money transactions between users (Venmo style).
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
       <About offset={3}>
-        <Title>About</Title>
+        <TitleWhite>About</TitleWhite>
         <AboutHero>
           <Avatar src={avatar} alt="Jesus Escalona" />
           <AboutSub>

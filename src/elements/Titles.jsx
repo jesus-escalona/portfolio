@@ -4,18 +4,36 @@ import { rotateAnimation } from '../styles/animations'
 import triangle from '../images/triangle.svg'
 
 export const Title = styled.h1`
-  ${tw`text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block`};
+  ${tw`text-4xl lg:text-4xl font-serif text-black mb-8 tracking-wide relative inline-block`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  &:before {
+  /*&:before {
     content: '';
     width: 40px;
     height: 40px;
     background: url(${triangle});
     position: absolute;
     background-size: 40px;
+    text-color: black;
     ${rotateAnimation('4s')};
     left: -60px;
-    top: 5px;
+    top: 5px;*/
+  }
+`
+
+export const TitleWhite = styled.h1`
+  ${tw`text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block`};
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  /*&:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(${triangle});
+    position: absolute;
+    background-size: 40px;
+    text-color: black;
+    ${rotateAnimation('4s')};
+    left: -60px;
+    top: 5px;*/
   }
 `
 
