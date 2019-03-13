@@ -52,7 +52,7 @@ const AboutDesc = styled.p`
 `
 
 const ContactText = styled.p`
-  ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  ${tw`text-black font-sans text-xl md:text-2xl lg:text-3xl`};
 `
 
 const Footer = styled.footer`
@@ -116,9 +116,12 @@ const Index = () => (
         <Inner>
           <Title>Hit me up</Title>
           <ContactText>
-            Say <a href="mailto:jesusescalona@me.com">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Say{' '}
+            <a href="mailto:jesusescalona@me.com?subject=Just%20saying%20hello%20!&amp;body=Dear%20Jesus%2C%0AI'm%20interested%20in%20discussing%20project%20opportunities%20with%20you.%0Asincerely%2C%0A%5B%20your%20name%3F%20%5D">
+              Hi
+            </a>{' '}
+            or find me on other platforms: <a href="https://linkedin.com/in/jesusescalona19/">LinkedIn</a> &{' '}
+            <a href="https://telegram.me/eyisus">Telegram</a>
           </ContactText>
         </Inner>
         <Footer>
