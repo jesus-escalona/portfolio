@@ -130,7 +130,14 @@ const colors = {
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
-}
+
+  // custom app colors
+  'app-dark-green': '#006D60',
+  'app-orange': '#FF8863',
+  'app-red': '#C25452',
+  'app-pink': '#FF8983',
+  'app-blue': '#61D3E0',
+};
 
 module.exports = {
   /*
