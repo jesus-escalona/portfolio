@@ -31,10 +31,15 @@ const Mockup = styled.img`
   ${tw`w-80 xl:w-128 h-auto`};
 `
 
-const ProjectCard = ({ title, link, children, mockup, tech }) => (
+const Iphone = styled.img`
+  ${tw`w-24 xl:w-36 h-auto`};
+`
+
+const ProjectCard = ({ title, link, children, mockup, tech, iphone }) => (
   <Wrapper href={link} target="_blank" rel="noopener noreferrer">
     <Title>{title}</Title>
-    <Mockup src={mockup} alt={title} />
+    {iphone ?
+      <Iphone src={mockup} alt={title}/> : <Mockup src={mockup} alt={title} />}
     <Text2>{tech}</Text2>
     <Text>{children}</Text>
   </Wrapper>
@@ -45,5 +50,8 @@ export default ProjectCard
 ProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  tech: PropTypes.string.isRequired,
+  mockup: PropTypes.string.isRequired,
+  iphone: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
 }

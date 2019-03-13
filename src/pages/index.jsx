@@ -20,6 +20,8 @@ import Contact from '../views/Contact'
 import avatar from '../images/avatar.jpg'
 import handly from '../images/handly_mockup.png'
 import pidgeon from '../images/pidgeon_mockup.png'
+import ios from '../images/sendger_mockup.png'
+import sendger from '../images/sendger_mockup_desktop.png'
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -72,13 +74,15 @@ const Index = () => (
       <Projects offset={1}>
         <Title>Projects</Title>
         <ProjectsWrapper>
-          {/* <ProjectCard
+          <ProjectCard
             title="Sendger"
-            link="https://www.sendger.com"
-            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+            link="https://itunes.apple.com/us/app/sendger/id1447288598?mt=8"
+            mockup={ios}
+            iphone
+            tech="React Native + Firebase"
           >
-            Mobile app that helps you send your things over the air by finding travelers.
-          </ProjectCard>*/}
+            Mobile app that helps you send things over the air with people.
+          </ProjectCard>
           <ProjectCard
             title="Handly"
             link="https://handlysearch.herokuapp.com"
