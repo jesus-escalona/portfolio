@@ -21,19 +21,18 @@ import avatar from '../images/avatar.jpg'
 import handly from '../images/handly_mockup.png'
 import pidgeon from '../images/pidgeon_mockup.png'
 import ios from '../images/sendger_mockup.png'
-import sendger from '../images/sendger_mockup_desktop.png'
 
 const ProjectsWrapper = styled.div`
-  ${tw`flex flex-wrap justify-between mt-8`};
+  ${tw`flex flex-wrap justify-between items-center mt-8`};
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   @media (max-width: 1200px) {
-    grid-gap: 3rem;
+    grid-gap: 2rem;
   }
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 4rem;
   }
 `
 
@@ -46,11 +45,11 @@ const Avatar = styled.img`
 `
 
 const AboutSub = styled.span`
-  ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-xl lg:text-3xl xl:text-4xl`};
 `
 
 const AboutDesc = styled.p`
-  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
+  ${tw`text-grey-light text-md md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
 `
 
 const ContactText = styled.p`
@@ -110,10 +109,9 @@ const Index = () => (
           </AboutSub>
         </AboutHero>
         <AboutDesc>
-          I seek experiences, people, and culture, everywhere that I go. My passion for coding is big, but my will to
-          help people is bigger, I hope one day I will be able to give the world something that improves the life of
-          each one of us, but until that day and after, I will keep on learning and working hard to make that dream come
-          to reality. Together we will make something to remember.
+          I seek experiences and meeting new people. I hope one day I will be able to give the world something that
+          improves the life of each one of us, but until that day and after, I will keep on learning and working hard to
+          make that dream come to reality. Together we will make something to remember.
         </AboutDesc>
       </About>
       <Contact offset={4}>

@@ -5,7 +5,7 @@ import tw from 'tailwind.macro'
 
 const Wrapper = styled.a`
   width: 100%;
-  ${tw`relative no-underline px-8 py-8 md:py-24`};
+  ${tw`relative no-underline md:py-20`};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
     transform: translateY(-5px);
@@ -32,7 +32,7 @@ const Mockup = styled.img`
 `
 
 const Iphone = styled.img`
-  ${tw`w-24 xl:w-36 h-auto`};
+  ${tw`w-24 xl:w-40 h-auto`};
 `
 
 const ProjectCard = ({ title, link, children, mockup, tech, iphone }) => (
