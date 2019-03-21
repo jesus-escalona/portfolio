@@ -10,7 +10,7 @@ module.exports = {
   siteUrl: 'https://jcode.dev', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest
-  siteDescription: 'Portfolio static One-Page website with Parallax effect',
+  siteDescription: "Jesus Escalona's Portfolio",
   author: 'Jesus Augusto', // Author for schema.org JSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
