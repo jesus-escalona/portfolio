@@ -1,4 +1,4 @@
-const tailwind = require('../tailwind')
+const tailwind = require('../tailwind');
 
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "/portfolio"
@@ -14,12 +14,10 @@ module.exports = {
   author: 'Jesus Augusto', // Author for schema.org JSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@eyisus', // Twitter Username
-  ogSiteName: 'cara', // Facebook Site Name
   ogLanguage: 'en_US', // Facebook Language
   googleAnalyticsID: 'UA-136187827-1',
 
   // Manifest and Progress color
   themeColor: tailwind.colors.orange,
   backgroundColor: tailwind.colors['orange-lighter'],
-}
+};

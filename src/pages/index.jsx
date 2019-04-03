@@ -9,7 +9,7 @@ import ProjectCard from '../components/ProjectCard'
 
 // Elements
 import Inner from '../elements/Inner'
-import { Title, BigTitle, Subtitle, TitleWhite } from '../elements/Titles';
+import { Title, BigTitle, Subtitle, TitleWhite } from '../elements/Titles'
 
 // Views
 import Hero from '../views/Hero'
@@ -34,31 +34,31 @@ const ProjectsWrapper = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 4rem;
   }
-`
+`;
 
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
-`
+`;
 
 const Avatar = styled.img`
   ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
-`
+`;
 
 const AboutSub = styled.span`
   ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-xl lg:text-3xl xl:text-4xl`};
-`
+`;
 
 const AboutDesc = styled.p`
   ${tw`text-grey-light text-md md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
-`
+`;
 
 const ContactText = styled.p`
   ${tw`text-black font-sans text-xl md:text-2xl lg:text-3xl`};
-`
+`;
 
 const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
-`
+`;
 
 const Index = () => (
   <>
@@ -70,7 +70,21 @@ const Index = () => (
         </BigTitle>
         <Subtitle>Full stack software engineer who loves coding and facing new challenges.</Subtitle>
       </Hero>
-      <Projects offset={1}>
+      <About offset={1}>
+        <TitleWhite>About</TitleWhite>
+        <AboutHero>
+          <Avatar src={avatar} alt="Jesus Escalona" />
+          <AboutSub>
+            I'm a Fast learner, self-teaching, DRY-code lover, looking to break down complex problems to conquer them.
+          </AboutSub>
+        </AboutHero>
+        <AboutDesc>
+          I seek experiences and meeting new people. I hope one day I will be able to give the world something that
+          improves the life of each one of us, but until that day and after, I will keep on learning and working hard to
+          make that dream come to reality. Together we will make something to remember.
+        </AboutDesc>
+      </About>
+      <Projects offset={2}>
         <Title>Projects</Title>
         <ProjectsWrapper>
           <ProjectCard
@@ -100,20 +114,6 @@ const Index = () => (
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
-      <About offset={3}>
-        <TitleWhite>About</TitleWhite>
-        <AboutHero>
-          <Avatar src={avatar} alt="Jesus Escalona" />
-          <AboutSub>
-            I'm a Fast learner, self-teaching, DRY-code lover, looking to break down complex problems to conquer them.
-          </AboutSub>
-        </AboutHero>
-        <AboutDesc>
-          I seek experiences and meeting new people. I hope one day I will be able to give the world something that
-          improves the life of each one of us, but until that day and after, I will keep on learning and working hard to
-          make that dream come to reality. Together we will make something to remember.
-        </AboutDesc>
-      </About>
       <Contact offset={4}>
         <Inner>
           <Title>Hit me up</Title>
@@ -134,6 +134,6 @@ const Index = () => (
       </Contact>
     </Parallax>
   </>
-)
+);
 
 export default Index
