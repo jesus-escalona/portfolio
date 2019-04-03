@@ -128,8 +128,7 @@ const Index = () => (
         </Inner>
         <Footer>
           &copy; 2019 by Jesus Escalona.{' '}
-          <a href="https://github.com/jesus-escalona">Github Repository</a>. Made by{' '}
-          <a href="https://jcode.dev">jcode.dev</a>.
+          <a href="https://github.com/jesus-escalona">Github Repository</a>.
         </Footer>
       </Contact>
     </Parallax>
