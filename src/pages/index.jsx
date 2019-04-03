@@ -41,7 +41,7 @@ const AboutHero = styled.div`
 `;
 
 const Avatar = styled.img`
-  ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
+  ${tw`rounded-full w-48 xl:w-64 shadow-lg h-auto`};
 `;
 
 const AboutSub = styled.span`
@@ -71,7 +71,7 @@ const Index = () => (
         <Subtitle>Full stack software engineer who loves coding and facing new challenges.</Subtitle>
       </Hero>
       <About offset={1}>
-        <TitleWhite>About</TitleWhite>
+        <TitleWhite>Me</TitleWhite>
         <AboutHero>
           <Avatar src={avatar} alt="Jesus Escalona" />
           <AboutSub>
@@ -85,7 +85,7 @@ const Index = () => (
         </AboutDesc>
       </About>
       <Projects offset={2}>
-        <Title>Projects</Title>
+        <Title>My work</Title>
         <ProjectsWrapper>
           <ProjectCard
             title="Sendger"
