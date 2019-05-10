@@ -1,5 +1,5 @@
 # My Portfolio
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8a183108-4511-462b-b3ec-3d1efa26f9b4/deploy-status)](https://app.netlify.com/sites/silly-liskov-35537c/deploys)
 Static page with lots of css.
 
 [Demo Website](https://jcode.dev)
