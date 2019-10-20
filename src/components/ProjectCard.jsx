@@ -16,11 +16,13 @@ const Wrapper = styled.a`
 const Text = styled.div`
   ${tw`text-black font-sans text-sm md:text-base`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 1em;
 `
 
 const Text2 = styled.div`
   ${tw`text-black font-semibold font-sans text-md md:text-lg`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 1em;
 `
 
 const Title = styled.div`
@@ -30,10 +32,12 @@ const Title = styled.div`
 
 const Mockup = styled.img`
   ${tw`w-80 xl:w-128 h-auto`};
+  margin-top: 2em;
 `
 
 const Iphone = styled.img`
   ${tw`w-24 xl:w-40 h-auto`};
+  margin-top: 2em;
 `
 
 const ProjectCard = ({ title, link, children, mockup, tech, iphone }) => (

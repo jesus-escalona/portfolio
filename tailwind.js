@@ -132,11 +132,11 @@ const colors = {
   'pink-lightest': '#ffebef',
 
   // custom app colors
-  'app-dark-green': '#006D60',
+  'app-dark-green': '#007675',
   'app-orange': '#FF8863',
-  'app-red': '#C25452',
-  'app-pink': '#FF8983',
-  'app-blue': '#61D3E0',
+  'app-red': '#fe526f',
+  'app-pink': '#f2d6d7',
+  'app-blue': '#00c9c4',
 };
 
 module.exports = {
@@ -202,11 +202,11 @@ module.exports = {
 
   fonts: {
     sans: [
+      'Roboto',
       'Open Sans',
       '-apple-system',
       'BlinkMacSystemFont',
       'Segoe UI',
-      'Roboto',
       'Oxygen',
       'Ubuntu',
       'Cantarell',
@@ -216,12 +216,13 @@ module.exports = {
       'sans-serif',
     ],
     serif: [
-      'Cantata One',
+      'Proza Libre',
+      'Lucida',
       'Constantia',
+      'Cantata One',
       'Lucida Bright',
       'Lucidabright',
       'Lucida Serif',
-      'Lucida',
       'DejaVu Serif',
       'Bitstream Vera Serif',
       'Liberation Serif',
