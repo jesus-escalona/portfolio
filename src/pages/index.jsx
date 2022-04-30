@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { Parallax } from 'react-spring/renderprops-addons.cjs'
+import { Parallax } from '@react-spring/parallax'
 
 // Components
 import Layout from '../components/Layout'
@@ -68,7 +68,7 @@ const Index = () => (
     <Parallax pages={5}>
       <Hero offset={0}>
         <BigTitle>
-          Hello there, <br /> I'm Jesus Escalona.
+          Hello there 👋, <br /> I'm Jesus.
         </BigTitle>
         <Subtitle>Full stack software engineer who loves coding and facing new challenges.</Subtitle>
       </Hero>
@@ -145,7 +145,7 @@ const Index = () => (
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2019 by Jesus Escalona. <a href="https://github.com/jesus-escalona">Github Repository</a>.
+          &copy; 2022 by Jesus Escalona. <a href="https://github.com/jesus-escalona">Github Repository</a>.
         </Footer>
       </Contact>
     </Parallax>
