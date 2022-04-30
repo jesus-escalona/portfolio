@@ -145,7 +145,7 @@ const Index = () => (
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2019 by Jesus Escalona. <a href="https://github.com/jesus-escalona">Github Repository</a>.
+          &copy; 2022 by Jesus Escalona. <a href="https://github.com/jesus-escalona">Github Repository</a>.
         </Footer>
       </Contact>
     </Parallax>

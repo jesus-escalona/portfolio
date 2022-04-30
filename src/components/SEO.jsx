@@ -39,7 +39,7 @@ const Head = props => {
       '@type': 'Person',
       name: config.author,
     },
-    copyrightYear: '2019',
+    copyrightYear: '2022',
     creator: {
       '@type': 'Person',
       name: config.author,
