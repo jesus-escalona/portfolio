@@ -90,16 +90,6 @@ const Index = () => (
         <Title>My work</Title>
         <ProjectsWrapper>
           <ProjectCard
-            title="Sendger"
-            link="https://itunes.apple.com/us/app/sendger/id1447288598?mt=8"
-            mockup={ios}
-            iphone
-            tech="React Native + Firebase"
-          >
-            Sendger is an iOs and Android app that helps you send anything you want, to any country in the world, by
-            connecting you with the right people, at the right time.
-          </ProjectCard>
-          <ProjectCard
             title="Snooze, an AM Eatery"
             link="https://snoozeeatery.com"
             mockup={snooze}
@@ -110,12 +100,22 @@ const Index = () => (
             leaving the React frontend stateless.
           </ProjectCard>
           <ProjectCard
+            title="Sendger"
+            link="https://itunes.apple.com/us/app/sendger/id1447288598?mt=8"
+            mockup={ios}
+            iphone
+            tech="React Native + Firebase"
+          >
+            (App removed from app store by owner) Sendger is an iOs and Android app that helps you send anything you want, to any country in the world, by
+            connecting you with the right people, at the right time.
+          </ProjectCard>
+          <ProjectCard
             title="Food Systems Dialogue's Event Planner"
             link="https://fsds-tool.herokuapp.com"
             mockup={fsds}
             tech="React.js + Google Docs API"
           >
-            This event planner system was finely crafted to help coordinators at Food Systems Dialogue's organize
+            (Heroku killed this) This event planner system was finely crafted to help coordinators at Food Systems Dialogue's organize
             participants, visualize data, get insights and create invitations for their events around the world.
           </ProjectCard>
           <ProjectCard
@@ -124,10 +124,10 @@ const Index = () => (
             mockup={handly}
             tech="Rails API + React & Redux"
           >
-            Handly is a single-page app that gets you a fair price estimation from moving companies around you, based on
+            (Heroku killed this too! :() Handly is a single-page app that gets you a fair price estimation from moving companies around you, based on
             things like distance, location and how much help do you need with your relocation needs.
           </ProjectCard>
-          <ProjectCard title="Pidgeon" link="https://pidgeon.herokuapp.com" mockup={pidgeon} tech="Pure Rails + ERB">
+          <ProjectCard title="Pidgeon" link="https://pidgeon-i1k9.onrender.com/" mockup={pidgeon} tech="Pure Rails + ERB">
             Pidgeon is a responsive MVC app that handles money transactions between users (Venmo style).
           </ProjectCard>
         </ProjectsWrapper>
@@ -141,11 +141,11 @@ const Index = () => (
               Hi,
             </a>{' '}
             find me on other platforms: <a href="https://linkedin.com/in/jesusescalona19/">LinkedIn</a> &{' '}
-            <a href="https://telegram.me/eyisus">Telegram</a>
+            <a href="https://telegram.me/corgibun">Telegram</a>
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2022 by Jesus Escalona. <a href="https://github.com/jesus-escalona">Github Repository</a>.
+          &copy; {new Date().getFullYear()} by Jesus Escalona. <a href="https://github.com/jesus-escalona">Github Repository</a>.
         </Footer>
       </Contact>
     </Parallax>
